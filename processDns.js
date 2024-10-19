@@ -70,3 +70,4 @@ async function addDNSRecord(subdomain, record) {
 }
 
 processFiles();
+const content = (await fs.readFile(dnsFilePath, 'utf-8')).trim();
